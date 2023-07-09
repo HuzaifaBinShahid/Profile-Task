@@ -1,0 +1,311 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Task</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="
+          background-color: #222222;
+          box-shadow: 0 8px 8px -2px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <a class="navbar-brand" href="#" style="margin-right: 5rem">Envoycan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0" style="margin-right: 15rem">
+            <i class="fa far fa-search" style="color: #ffff"></i>
+            <input
+              class="form-control mr-sm-2 border-0"
+              style="background-color: #222222"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active li-margin">
+              <a class="nav-link" href="#"
+                >Locations <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active li-margin">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item active li-margin">
+              <a class="nav-link" href="#"> My bookings </a>
+            </li>
+          </ul>
+
+          <button class="btn btn-dark nav-btn">Login/Register</button>
+          <button
+            class="btn btn-dark"
+            style="border-radius: 8px; padding: 5px 20px; margin: 8px"
+          >
+            Join Now
+          </button>
+        </div>
+      </nav>
+    </section>
+
+    <section id="mainpage" style="margin-top: 5rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="content">
+              <img src="profile.png" width="100px" height="100px" alt="" />
+
+              <h3>Huzaifa Bin Shahid</h3>
+
+              <button class="btn btn-dark nav-btn">Edit Profile</button>
+            </div>
+
+            <div class="general">
+              <p class="Profile-p">General</p>
+
+              <ul style="margin: 0; padding: 0">
+                <li style="list-style-type: none">
+                  <i class="fa fas fa-moon general-icons"></i> Dark Mode
+                  <div class="flipswitch">
+                    <input
+                      type="checkbox"
+                      name="flipswitch"
+                      class="flipswitch-cb"
+                      id="fs"
+                      checked
+                    />
+                    <label class="flipswitch-label" for="fs">
+                      <div class="flipswitch-inner"></div>
+                      <div class="flipswitch-switch"></div>
+                    </label>
+                  </div>
+                </li>
+                <li style="list-style-type: none">
+                  <i class="fas fa-lock general-icons"></i> Help Center
+                  <i class="fas fa-greater-than general-tabs"></i>
+                </li>
+                <li style="list-style-type: none">
+                  <i class="fas fa-globe general-icons"></i> App language<i
+                    class="fas fa-greater-than general-tabs"
+                  ></i>
+                </li>
+                <li style="list-style-type: none">
+                  <i class="fas fa-heart general-icons"></i> Favourite Service
+                  <i class="fas fa-greater-than general-tabs"></i>
+                </li>
+                <li style="list-style-type: none">
+                  <i class="fas fa-map-marker-alt general-icons"></i> Address
+                  <i class="fas fa-greater-than general-tabs"></i>
+                </li>
+                <li style="list-style-type: none">
+                  <i class="fas fa-info-circle general-icons"></i> Support and
+                  live chat <i class="fas fa-greater-than general-tabs"></i>
+                </li>
+              </ul>
+
+              <div class="about-app">
+                <p class="Profile-p">About app</p>
+
+                <ul style="margin: 0; padding: 0">
+                  <li style="list-style-type: none">
+                    <i class="fas fa-certificate general-icons"></i>Privacy
+                    Policy
+                  </li>
+                  <li style="list-style-type: none">
+                    <i class="fa fa-file-alt general-icons"></i> Terms &
+                    Conditions
+                  </li>
+                  <li style="list-style-type: none">
+                    <i class="fas fa-gavel general-icons"></i> Legal Notices
+                  </li>
+                  <li style="list-style-type: none">
+                    <i class="fas fa-info-circle general-icons"></i> About
+                  </li>
+                  <li style="list-style-type: none">
+                    <i class="fas fa-star general-icons"></i> Rate Us
+                  </li>
+                </ul>
+              </div>
+
+              <div class="logout-btn">
+                <button class="btn btn-dark nav-btn">LOGOUT</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" style="background-color: #363636">
+            <div class="chat-names" style="margin-top: 1rem">
+              <form
+                class="form-inline my-2 my-lg-0"
+                style="background-color: #222222; border-radius: 8px"
+              >
+                <i
+                  class="fa far fa-search"
+                  style="color: #ffff; padding-left: 2rem"
+                ></i>
+                <input
+                  class="form-control mr-sm-2 border-0"
+                  style="background-color: #222222"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="searchInput"
+                />
+              </form>
+
+              <div  class="chat-profile">
+                <img src="profile.png" class="image" alt="" width="50px" />
+
+                <div class="text">
+                  <h6>Huzaifa Bin Shahid <span class="time">10:00 AM</span></h6>
+                  <p>Hello there this is myself</p>
+                </div>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="chat-profile">
+                <img src="profile.png" class="image" alt="" width="50px" />
+
+                <div class="text">
+                  <h6>Junaid <span class="time">10:00 AM</span></h6>
+                  <p>Hello there this is myself</p>
+                </div>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="chat-profile">
+                <img src="profile.png" class="image" alt="" width="50px" />
+
+                <div class="text">
+                  <h6>Sahil<span class="time">10:00 AM</span></h6>
+                  <p>Hello there this is myself</p>
+                </div>
+
+                <div class="divider"></div>
+              </div>
+
+              <div  class="chat-profile">
+                <img src="profile.png" class="image" alt="" width="50px" />
+
+                <div class="text">
+                  <h6>Maniha <span class="time">10:00 AM</span></h6>
+                  <p>Hello there this is myself</p>
+                </div>
+
+                <div class="divider"></div>
+              </div>
+
+              <div class="chat-profile">
+                <img src="profile.png" class="image" alt="" width="50px" />
+
+                <div class="text">
+                  <h6>Ashna <span class="time">10:00 AM</span></h6>
+                  <p>Hello there this is myself</p>
+                </div>
+
+                <div  class="divider"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" style="background-color: #363636">
+            <div class="header-name">
+              <i class="fas fa-less-than" style="margin: 0 2rem 0 1rem"></i>
+
+              <img src="profile.png" alt="" width="30px" />
+              <span>Rafia</span>
+              <i class="fas fa-ellipsis-v" style="float: right"></i>
+            </div>
+
+            <div class="chat">
+              <img
+                src="chatimage.jpg"
+                alt=""
+                width="200px"
+                style="margin-bottom: 1rem"
+              />
+
+              <div class="message sender">Hi! How are you doing?</div>
+
+              <div class="message recipient">
+                Hey! I'm doing great, thanks for asking. How about you?
+              </div>
+
+              <div class="message sender">
+                I had an amazing day today! Went hiking in the mountains and saw
+                some breathtaking views. It was truly an unforgettable
+                experience.
+              </div>
+
+              <div class="message recipient">
+                That sounds incredible! I've always wanted to go hiking in the
+                mountains. Hopefully, I'll get a chance soon.
+              </div>
+
+              <div class="message sender">
+                You should definitely try it sometime. The feeling of being
+                surrounded by nature is so refreshing and rejuvenating.
+              </div>
+
+              <span>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Write a message"
+                  class="message"
+                />
+                <i class="fas fa-paper-plane"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/b79d9dd478.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
